@@ -10,4 +10,5 @@ function closeNavbar() {
 document.getElementById("navbar-open").addEventListener("click", openNavbar);
 document.getElementById("navbar-close").addEventListener("click", closeNavbar);
 
-const help = confirm("");
+// const help = confirm("Help is given to those who deserve it");
+const help = prompt("do you like cofeee");
