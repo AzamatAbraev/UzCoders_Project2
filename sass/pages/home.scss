@@ -1,4 +1,83 @@
 @use "../global";
-@use "../components/upcoming-sermon";
-@use "../components/blog-card";
+@use "../utils/variables" as vrb;
+@use "../utils/mixins" as mxn;
 @use "../components/section-header";
+
+main {
+  margin-top: 80px;
+}
+
+.home {
+  background-image: url("../../images/home/home-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  &__info {
+    width: 50%;
+    &__subtitle {
+      color: vrb.$c5;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      color: vrb.$c5;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 82px;
+      letter-spacing: -0.64px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    &__btn {
+      @include mxn.primary-btn;
+      margin-bottom: 64px;
+    }
+  }
+  
+  &__text {
+    display: flex;
+    gap: 12px;
+    &__desc {
+      color: vrb.$c5;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 308px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .home__info {
+    width: 100%;
+    .home__info__title {
+      font-size: 44px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .home__info {
+    text-align: center;
+  }
+
+  .home__text {
+    justify-content: center;
+  }
+} 
+
+.about__container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+
