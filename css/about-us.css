@@ -68,6 +68,9 @@ a {
   display: flex;
   gap: 48px;
 }
+.header .header-navbar .header__images img {
+  width: 100%;
+}
 .header .header-navbar .header-link {
   color: #fff;
   font-family: Roboto Condensed;
@@ -107,6 +110,10 @@ a {
   .header .header-navbar .nav-btn {
     display: none;
   }
+}
+
+.hamburger img {
+  width: 100%;
 }
 
 #navbar-open {
@@ -158,10 +165,6 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-img {
-  width: 100%;
 }
 
 .section-header {
