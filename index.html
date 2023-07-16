@@ -7,14 +7,65 @@
     <link rel="stylesheet" href="css/home.min.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header-navbar">
+        <div class="header__images">
+          <a href="index.html">
+            <img src="images/header/Logo.svg" alt="logo" />
+          </a>
+          <div class="line"></div>
+        </div>
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="index.html" class="header-link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="about-us.html" class="header-link">About us</a>
+          </li>
+          <li class="header__item">
+            <a href="sermons.html" class="header-link">Sermon</a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html" class="header-link">Blog</a>
+          </li>
+        </ul>
+        <button class="hamburger" id="navbar-open">
+          <img class="img" src="images/header/Vector.svg" alt="Hamburger" />
+        </button>
+        <button onclick='location.href="contact.html"' class="nav-btn">Contact us</button>
+      </div>
+      <div id="navbar-responsive">
+        <ul class="res-header-list">
+          <li class="res-header-item">
+            <a href="index.html" class="res-header-link active">Home</a>
+          </li>
+          <li class="res-header-item">
+            <a href="#about" class="res-header-link">About us</a>
+          </li>
+          <li class="res-header-item">
+            <a href="sermons.html" class="res-header-link">Sermon</a>
+          </li>
+          <li class="res-header-item">
+            <a href="blog.html" class="res-header-link">Blog</a>
+          </li>
+
+          <li class="res-header-item">
+            <a href="contact.html" class="res-header-link">Contact us</a>
+          </li>
+        </ul>
+
+        <button id="navbar-close">
+          <img src="images/header/close.svg" />
+        </button>
+      </div>
+    </header>
     <main>
       <section class="home">
         <div class="container home__container">
           <div class="home__info">
             <h4 class="home__info__subtitle">Welcome to our CHURCH</h4>
             <h1 class="home__info__title">Become a part of our community</h1>
-            <button class="home__info__btn">Learn more</button>
+            <button onclick='location.href="about-us.html"' class="home__info__btn">Learn more</button>
           </div>
           <div class="home__text">
             <img src="images/home/Line.svg" alt="line" />
@@ -83,7 +134,7 @@
                 alt="A man with beard praying"
               />
             </div>
-            <div class="compassion__card compassion__card__middle">
+            <div class="compassion__card">
               <img
                 class="compassion_img"
                 src="images/home/compassion-2.png"
@@ -182,17 +233,130 @@
                 <img src="images/home/clock.svg" alt="" />
                 <p>Friday 23:39 IST Saturday 11:20 ISD</p>
               </div>
-              <button class="up__btn">
-                Register
-              </button>
+              <button onclick='location.href="sermons.html"' class="up__btn">Register</button>
             </div>
             <div class="us__row__right">
-              <img src="images/home/us-1.png" alt="Upcoming sermons">
+              <img src="images/home/us-1.png" alt="Upcoming sermons" />
+            </div>
+          </div>
+          <div class="us__bottom">
+            <a href="#" class="us__view__link">
+              View all Sermons
+            </a>
+            <a href="">
+              <img src="images/home/arrow.svg" alt="Arrow Next">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="visit">
+        <div class="container-sm visit__container">
+          <div class="visit__box">
+            <div class="visit__box__left">
+              <h2 class="visit__title">We want to serve the world around us</h2>
+              <p class="visit__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+              <button class="visit__btn">
+                Visit
+              </button>
+            </div>
+            <div class="visit__box__right">
+              <img src="images/home/quote.svg" alt="quote">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container blog__container">
+          <div class="blog__header">
+            <h4 class="blog__subtitle">
+              Read our Blog
+            </h4>
+            <h2 class="blog__title">
+              SHARE, INSPIRE, INNOVATE
+            </h2>
+          </div>
+          <div class="blog__row">
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">
+                Relationship
+              </h4>
+              <h3 class="blog__card__title">
+                WATCH AND LISTEN TO OUR SERMONS
+              </h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">
+                  By Mathew Johnson
+                </p>
+                <p class="blog__card__name">
+                  Tuesday 13 May, 2021
+                </p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">
+                Relationship
+              </h4>
+              <h3 class="blog__card__title">
+                WATCH AND LISTEN TO OUR SERMONS
+              </h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">
+                  By Mathew Johnson
+                </p>
+                <p class="blog__card__name">
+                  Tuesday 13 May, 2021
+                </p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">
+                Relationship
+              </h4>
+              <h3 class="blog__card__title">
+                WATCH AND LISTEN TO OUR SERMONS
+              </h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">
+                  By Mathew Johnson
+                </p>
+                <p class="blog__card__name">
+                  Tuesday 13 May, 2021
+                </p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">
+                Relationship
+              </h4>
+              <h3 class="blog__card__title">
+                WATCH AND LISTEN TO OUR SERMONS
+              </h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">
+                  By Mathew Johnson
+                </p>
+                <p class="blog__card__name">
+                  Tuesday 13 May, 2021
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="JS/main.js"></script>
   </body>
 </html>

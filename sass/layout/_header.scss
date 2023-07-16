@@ -6,6 +6,10 @@
   background: #0d0d0d;
   width: 100%;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 
   .header-navbar {
     display: flex;
