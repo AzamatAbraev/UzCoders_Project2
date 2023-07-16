@@ -24,6 +24,7 @@ ul {
 button {
   cursor: pointer;
   border: none;
+  font-family: "Roboto Condensed";
 }
 
 input:focus {
@@ -34,7 +35,13 @@ a {
   text-decoration: none;
 }
 
-.container, .container-md, .container-sm {
+body {
+  font-family: "Roboto Condensed";
+}
+
+.container,
+.container-md,
+.container-sm {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -167,21 +174,15 @@ a {
   cursor: pointer;
 }
 
-.upcoming-sermon__left button {
-  padding: 24px 64px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  background-color: #161722;
-  color: #ffd2a4;
-  text-transform: uppercase;
-  transition: 0.5s;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+.header {
+  padding: 26px 0px;
+  background: #0d0d0d;
 }
-.upcoming-sermon__left button:hover {
-  color: #fff;
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-header {
@@ -200,4 +201,263 @@ a {
   line-height: 64px;
   text-transform: uppercase;
   letter-spacing: -0.48px;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.home {
+  background-image: url("../../images/home/home-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home__container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.home__info {
+  width: 50%;
+}
+.home__info__subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.home__info__title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.home__info__btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-bottom: 64px;
+}
+.home__info__btn:hover {
+  background: #f2c79b;
+}
+.home__text {
+  display: flex;
+  gap: 12px;
+}
+.home__text__desc {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 308px;
+}
+
+@media (max-width: 850px) {
+  .home__info {
+    width: 100%;
+  }
+  .home__info .home__info__title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 450px) {
+  .home__info {
+    text-align: center;
+  }
+  .home__text {
+    justify-content: center;
+  }
+}
+.about__container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.about__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  margin-top: 64px;
+}
+
+.about__card {
+  padding: 80px 80px 64px 80px;
+  background-color: #fff5eb;
+  transition: 0.5s;
+  border-bottom: 16px solid #ffd2a4;
+  cursor: pointer;
+}
+.about__card:hover {
+  background-color: #f5f2f0;
+}
+.about__card__title {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #161722;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+.about__card__desc {
+  color: #161722;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about__card__hover {
+  height: 16px;
+  width: 100%;
+  background-color: #ffd2a4;
+}
+
+@media (max-width: 1050px) {
+  .about__row {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .about__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .about__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__card {
+    padding: 50px;
+  }
+  .about__card__title {
+    font-size: 28px;
+  }
+}
+.compassion {
+  padding-bottom: 128px;
+}
+.compassion__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compassion__info__desc {
+  color: #161722;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7799999714;
+  text-align: center;
+  max-width: 846px;
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+.compassion__info__btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.compassion__info__btn:hover {
+  background: #f2c79b;
+}
+.compassion_img {
+  width: 100%;
+}
+.compassion__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+}
+.compassion__card {
+  width: 293px;
+  cursor: pointer;
+}
+.compassion__card__middle {
+  width: 390px;
+  margin-top: 48px;
+}
+.compassion__mission {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.compassion__mission__subtitle {
+  color: #161722;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.compassion__mission__title {
+  color: #161722;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+.compassion__mission__desc {
+  color: #161722;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 512px;
+}
+.compassion__mission_link {
+  display: flex;
+  gap: 6px;
+}
+.compassion__mission_link a {
+  color: #161722;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1070px) {
+  .compassion__row {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 48px;
+    row-gap: 24px;
+  }
+  .compassion__card {
+    width: 100%;
+  }
+  .compassion__card__middle {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1070px) {
+  .compassion__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.join__title {
+  max-width: 432px;
 }
