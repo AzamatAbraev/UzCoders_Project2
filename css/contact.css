@@ -57,3 +57,14 @@ body {
 .container-sm {
   max-width: 808px;
 }
+
+.header {
+  padding: 26px 0px;
+  background: #0d0d0d;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
