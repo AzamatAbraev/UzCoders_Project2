@@ -63,6 +63,10 @@ body {
   background: #0d0d0d;
   width: 100%;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }
 .header .header-navbar {
   display: flex;
@@ -168,6 +172,97 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+footer {
+  padding: 100px 0px;
+  background: var(--bl, #161722);
+}
+footer .footer__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+  footer .footer__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  footer .footer__items {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+  }
+}
+footer .footer__items .footer__part {
+  color: #fff;
+  margin-bottom: 32px;
+  margin-top: 27px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .footer__items .footer__text {
+  margin-bottom: 15px;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+footer .footer__items .footer__item a {
+  display: inline-block;
+  color: var(--white, #fff);
+  font-size: 12px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer .footer__items .footer__images {
+  display: flex;
+  gap: 8px;
+}
+footer .footer__items .subscribe {
+  color: var(--white, #fff);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px; /* 137.5% */
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+}
+footer .footer__items .subscribe__btns {
+  display: flex;
+}
+@media (max-width: 500px) {
+  footer .footer__items .subscribe__btns {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+footer .footer__items .subscribe__btns .email {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--white, #fff);
+  background: var(--bl, #161722);
+  padding: 20px 100px 20px 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer .footer__items .subscribe__btns .footer-btn {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
 .upcoming-sermon__left button {
@@ -333,5 +428,112 @@ body {
 @media (max-width: 300px) {
   #upcoming .upcoming__parts .register .upc__btn {
     padding: 10px 20px;
+  }
+}
+
+#sermons {
+  padding: 100px 0px;
+  background: var(--grey, #f5f2f0);
+}
+#sermons .sermons__header {
+  color: var(--black, #161722);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+#sermons .sermons__cards {
+  margin-top: 64px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1000px) {
+  #sermons .sermons__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  #sermons .sermons__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#sermons .sermons__cards .sermons__card {
+  padding: 24px 27px 50px 40px;
+  background: var(--white, #fff);
+}
+#sermons .sermons__cards .sermons__card .sermon__text {
+  text-align: right;
+}
+#sermons .sermons__cards .sermons__card .sermon__text .sermon__num {
+  color: var(--black, #161722);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+#sermons .sermons__cards .sermons__card .sermon__text .sermon__date {
+  color: var(--black, #161722);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#sermons .sermons__cards .sermons__card .sermon__event {
+  margin: 10px 0px;
+  color: #ffd2a4;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+#sermons .sermons__cards .sermons__card .sermon__random {
+  margin-bottom: 16px;
+  color: var(--black, #161722);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+}
+#sermons .sermons__cards .sermons__card .sermon__lor {
+  margin-bottom: 32px;
+  margin-top: 16px;
+  color: var(--black, #161722);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+#sermons .sermons__cards .sermons__card .sermon__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+#sermons .sermons__cards .sermons__card .sermon__left .sermon__icon {
+  color: var(--black, #161722);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+#sermons .line__3 {
+  width: 305px;
+  height: 16px;
+  background: #ffd0a0;
+}
+@media (max-width: 1000px) {
+  #sermons .line__3 {
+    display: none;
   }
 }

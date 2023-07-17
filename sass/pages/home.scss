@@ -2,6 +2,7 @@
 @use "../utils/variables" as vrb;
 @use "../utils/mixins" as mxn;
 @use "../components/section-header";
+@use "../layout/footer";
 
 main {
   margin-top: 80px;
