@@ -1,3 +1,11 @@
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: sans-serif;
+  src: url(../../fonts/RobotoCondensed-Bold.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +51,17 @@ a {
 
 .container-sm {
   max-width: 808px;
+}
+
+.header {
+  padding: 26px 0px;
+  background: #0d0d0d;
+}
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .upcoming-sermon__left button {
