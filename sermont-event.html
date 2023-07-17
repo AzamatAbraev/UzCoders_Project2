@@ -9,6 +9,60 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="container header-navbar">
+      <div class="header__images">
+        <a href="index.html">
+          <img src="images/header/Logo.svg" alt="logo" />
+        </a>
+        <div class="line"></div>
+      </div>
+      <ul class="header__items">
+        <li class="header__item">
+          <a href="index.html" class="header-link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="about-us.html" class="header-link">About us</a>
+        </li>
+        <li class="header__item">
+          <a href="sermons.html" class="header-link">Sermon</a>
+        </li>
+        <li class="header__item">
+          <a href="blog.html" class="header-link">Blog</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="navbar-open">
+        <img class="img" src="images/header/Vector.svg" alt="Hamburger" />
+      </button>
+      <button onclick='location.href="contact.html"' class="nav-btn">
+        Contact us
+      </button>
+    </div>
+    <div id="navbar-responsive">
+      <ul class="res-header-list">
+        <li class="res-header-item">
+          <a href="index.html" class="res-header-link active">Home</a>
+        </li>
+        <li class="res-header-item">
+          <a href="#about" class="res-header-link">About us</a>
+        </li>
+        <li class="res-header-item">
+          <a href="sermons.html" class="res-header-link">Sermon</a>
+        </li>
+        <li class="res-header-item">
+          <a href="blog.html" class="res-header-link">Blog</a>
+        </li>
+
+        <li class="res-header-item">
+          <a href="contact.html" class="res-header-link">Contact us</a>
+        </li>
+      </ul>
+
+      <button id="navbar-close">
+        <img src="images/header/close.svg" />
+      </button>
+    </div>
+  </header>
   <div class="page-wrapper">
     <main class="main-wrapper">
       <section class="section_sermon-template-header">
