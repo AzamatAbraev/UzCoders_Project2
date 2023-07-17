@@ -61,6 +61,11 @@ body {
 .header {
   padding: 26px 0px;
   background: #0d0d0d;
+<<<<<<< HEAD
+}
+
+.header-navbar {
+=======
   width: 100%;
   position: fixed;
   top: 0;
@@ -69,10 +74,13 @@ body {
   z-index: 1000;
 }
 .header .header-navbar {
+>>>>>>> 4a7031394c62192af89ca2753fe70c3086d43055
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
 .header .header-navbar .header__items {
   display: flex;
   gap: 48px;
@@ -264,6 +272,7 @@ footer .footer__items .subscribe__btns .footer-btn {
   text-transform: uppercase;
   transition: 0.5s;
 }
+>>>>>>> 4a7031394c62192af89ca2753fe70c3086d43055
 
 .upcoming-sermon__left button {
   padding: 24px 64px;
