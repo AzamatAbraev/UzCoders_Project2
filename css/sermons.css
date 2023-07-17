@@ -63,10 +63,6 @@ body {
   background: #0d0d0d;
   width: 100%;
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
 }
 .header .header-navbar {
   display: flex;
@@ -82,9 +78,7 @@ body {
 }
 .header .header-navbar .header-link {
   color: #fff;
-  font-family: Roboto Condensed;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
@@ -193,72 +187,151 @@ body {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+#upcoming {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background: var(--grey, #f5f2f0);
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+#upcoming .upcoming__parts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 90px;
 }
-
-ul {
-  list-style-type: none;
+@media (max-width: 900px) {
+  #upcoming .upcoming__parts {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-button {
-  cursor: pointer;
-  border: none;
+#upcoming .upcoming__parts .upcoming__right img {
+  width: 100%;
 }
-
-input:focus {
-  outline: none;
+#upcoming .upcoming__parts .upcoming__event {
+  margin: 32px 0px 16px;
+  color: #ffd2a4;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
 }
-
-a {
-  text-decoration: none;
+#upcoming .upcoming__parts .upcoming__header {
+  color: var(--black, #161722);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
 }
-
-.container, .container-md, .container-sm {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+#upcoming .upcoming__parts .upciming__text {
+  margin: 16px 0px 32px;
+  color: var(--black, #161722);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
-
-.container {
-  max-width: 1320px;
+#upcoming .upcoming__parts .upcoming-line {
+  display: flex;
+  gap: 20px;
 }
-
-.container-md {
-  max-width: 1064px;
+@media (max-width: 500px) {
+  #upcoming .upcoming__parts .upcoming-line {
+    display: none;
+  }
 }
-
-.container-sm {
-  max-width: 808px;
+#upcoming .upcoming__parts .upcoming-line .line {
+  width: 2.464px;
+  height: 120px;
+  border: 2px solid #ffd2a4;
 }
-
-.upcoming-sermon__left button {
+@media (max-width: 500px) {
+  #upcoming .upcoming__parts .upcoming-line .line {
+    display: none;
+  }
+}
+#upcoming .upcoming__parts .upcoming-line .upcoming__lorem {
+  color: var(--black, #161722);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+#upcoming .upcoming__parts .upcoming__last {
+  margin-top: 30px;
+  color: var(--black, #161722);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+#upcoming .upcoming__parts .register {
+  background-color: #f7f8fa;
+  padding: 40px 0px 40px 40px;
+}
+#upcoming .upcoming__parts .register .register__session {
+  display: flex;
+  gap: 15px;
+  margin-top: 32px;
+}
+@media (max-width: 500px) {
+  #upcoming .upcoming__parts .register .register__session {
+    flex-direction: column;
+  }
+}
+#upcoming .upcoming__parts .register .register__session .register__left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+#upcoming .upcoming__parts .register .register__name {
+  margin-top: 32px;
+  color: #232536;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+#upcoming .upcoming__parts .register .line1 {
+  margin-top: 8px;
+  width: 412px;
+  height: 1px;
+  opacity: 0.200000003;
+  border: 1px solid #232536;
+}
+@media (max-width: 500px) {
+  #upcoming .upcoming__parts .register .line1 {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  #upcoming .upcoming__parts .register .line1 {
+    width: 200px;
+  }
+}
+#upcoming .upcoming__parts .register .register__fullname {
+  margin-top: 12px;
+  color: var(--b, #1d2130);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#upcoming .upcoming__parts .register .upc__btn {
   padding: 24px 64px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  background-color: #161722;
-  color: #ffd2a4;
+  background-color: #ffd2a4;
+  color: #1c1d28;
   text-transform: uppercase;
   transition: 0.5s;
-  -webkit-backdrop-filter: blur(40px);
-  backdrop-filter: blur(40px);
+  margin-top: 40px;
 }
-
-.upcoming-sermon__left button:hover {
-  color: #fff;
-}
-
-.header__items {
-  display: flex;
-  gap: 48px;
+@media (max-width: 300px) {
+  #upcoming .upcoming__parts .register .upc__btn {
+    padding: 10px 20px;
+  }
 }
