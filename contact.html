@@ -8,6 +8,57 @@
 </head>
 <body>
 
+  <header class="header">
+    <div class="container header-navbar">
+      <div class="header__images">
+        <img src="../images/header/headerlogo.svg" alt="logo" />
+        <div class="line"></div>
+      </div>
+      <ul class="header__items">
+        <li class="header__item">
+          <a href="#" class="header-link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header-link">About us</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header-link">Sermon</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header-link">Blog</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="navbar-open">
+        <img class="img" src="../images/header/Vector.svg" alt="Hamburger" />
+      </button>
+      <button class="nav-btn">Contact us</button>
+    </div>
+    <div id="navbar-responsive">
+      <ul class="res-header-list">
+        <li class="res-header-item">
+          <a href="#home" class="res-header-link active">Home</a>
+        </li>
+        <li class="res-header-item">
+          <a href="#about" class="res-header-link">About us</a>
+        </li>
+        <li class="res-header-item">
+          <a href="#sermon" class="res-header-link">Sermon</a>
+        </li>
+        <li class="res-header-item">
+          <a href="#blog" class="res-header-link">Blog</a>
+        </li>
+
+        <li class="res-header-item">
+          <a href="#contact" class="res-header-link">Contact us</a>
+        </li>
+      </ul>
+
+      <button id="navbar-close">
+        <img src="/images/header/close.svg" />
+      </button>
+    </div>
+  </header>
+
   <main>
     <div class="main-div">
       <img src="./images/contact images/img-1.png" alt="" class="main-img">
@@ -36,6 +87,63 @@
       <img src="./images/contact images/linkedln.png" alt="" class="main-img-4">
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer_align-item">
+          <img src="../images/footer/footerlogo.svg" alt="flogo" />
+          <h5 class="footer__part">© Copyright Finsweet 2022</h5>
+          <ul class="footer__part-items">
+            <li class="footer__item">
+              <a href="#" class="footer__link"> (480) 555-0103 </a>
+            </li>
+
+            <li class="footer__item">
+              <a href="#" class="footer__link">4517 Washington Ave. </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">finsweet@example.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_align-item">
+          <h2 class="footer__text">Quicklinks</h2>
+          <!-- <h5 class="footer__part">About us</h5> -->
+          <ul class="footer__part-items">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"> Sermons</a>
+            </li>
+
+            <li class="footer__item">
+              <a href="#" class="footer__link">Events</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_align-item">
+          <h2 class="footer__text">Connect</h2>
+          <div class="footer__images">
+            <img src="../images/footer/facebook.svg" alt="facebook" />
+            <img src="../images/footer/twitter.svg" alt="twiter" />
+            <img src="../images/footer/linkidin.svg" alt="linkidin" />
+          </div>
+        </div>
+        <div class="footer_align-item">
+          <h4 class="subscribe">Subscribe to get Latest Updates and News</h4>
+          <div class="subscribe__btns">
+            <button type="button" class="email">Yourmail@gmail.com</button>
+            <button type="submit" class="footer-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
