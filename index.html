@@ -3,38 +3,390 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project 21</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/home.min.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header-navbar">
+        <div class="header__images">
+          <a href="index.html">
+            <img src="images/header/Logo.svg" alt="logo" />
+          </a>
+          <div class="line"></div>
+        </div>
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="index.html" class="header-link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="about-us.html" class="header-link">About us</a>
+          </li>
+          <li class="header__item">
+            <a href="sermons.html" class="header-link">Sermon</a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html" class="header-link">Blog</a>
+          </li>
+        </ul>
+        <button class="hamburger" id="navbar-open">
+          <img class="img" src="images/header/Vector.svg" alt="Hamburger" />
+        </button>
+        <button onclick='location.href="contact.html"' class="nav-btn">
+          Contact us
+        </button>
+      </div>
+      <div id="navbar-responsive">
+        <ul class="res-header-list">
+          <li class="res-header-item">
+            <a href="index.html" class="res-header-link active">Home</a>
+          </li>
+          <li class="res-header-item">
+            <a href="#about" class="res-header-link">About us</a>
+          </li>
+          <li class="res-header-item">
+            <a href="sermons.html" class="res-header-link">Sermon</a>
+          </li>
+          <li class="res-header-item">
+            <a href="blog.html" class="res-header-link">Blog</a>
+          </li>
+
+          <li class="res-header-item">
+            <a href="contact.html" class="res-header-link">Contact us</a>
+          </li>
+        </ul>
+
+        <button id="navbar-close">
+          <img src="images/header/close.svg" />
+        </button>
+      </div>
+    </header>
     <main>
-      <section class="upcoming-sermon">
-        <div class="container">
-          <div class="section-header">
-            <h6>Watch and listen</h6>
-            <h2>THE benefits of joining our church</h2>
+      <section class="home">
+        <div class="container home__container">
+          <div class="home__info">
+            <h4 class="home__info__subtitle">Welcome to our CHURCH</h4>
+            <h1 class="home__info__title">Become a part of our community</h1>
+            <button
+              onclick='location.href="about-us.html"'
+              class="home__info__btn"
+            >
+              Learn more
+            </button>
           </div>
-          <div class="upcoming-sermon__row">
-            <div class="upcoming-sermon__left">
-              <button>Register</button>
+          <div class="home__text">
+            <img src="images/home/Line.svg" alt="line" />
+            <div class="home__text__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
             </div>
-            <div class="upcoming-sermon__right"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <div class="section-header">
+            <h6>sub-headline</h6>
+            <h2>a church that's relevant</h2>
+          </div>
+          <div class="about__row">
+            <div class="about__card">
+              <img src="images/home/about-1.svg" alt="Icon 1" />
+              <h4 class="about__card__title">About us</h4>
+              <p class="about__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="about__card">
+              <img src="images/home/about-2.svg" alt="Icon 2" />
+              <h4 class="about__card__title">Get involved</h4>
+              <p class="about__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="about__card">
+              <img src="images/home/about-3.svg" alt="Icon 2" />
+              <h4 class="about__card__title">Giving back</h4>
+              <p class="about__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="compassion">
+        <div class="container-md compassion__container">
+          <div class="section-header">
+            <h6>sub-headline</h6>
+            <h2 class="compassion__title">love and compassion</h2>
+          </div>
+          <div class="compassion__info">
+            <p class="compassion__info__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <button class="compassion__info__btn">Read more</button>
+          </div>
+          <div class="compassion__row">
+            <div class="compassion__card">
+              <img
+                class="compassion_img"
+                src="images/home/compassion-1.png"
+                alt="A man with beard praying"
+              />
+            </div>
+            <div class="compassion__card">
+              <img
+                class="compassion_img"
+                src="images/home/compassion-2.png"
+                alt="A man with beard praying"
+              />
+            </div>
+            <div class="compassion__card">
+              <img
+                class="compassion_img"
+                src="images/home/compassion-3.png"
+                alt="A man with beard praying"
+              />
+            </div>
+          </div>
+          <div class="compassion__mission">
+            <h4 class="compassion__mission__subtitle">our mission & vision</h4>
+            <h3 class="compassion__mission__title">celebrate WITH US</h3>
+            <p class="compassion__mission__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="compassion__mission__link">
+              <a href="#">Read More</a>
+              <img src="images/home/arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="container join__container">
+          <div class="join__header">
+            <h6 class="join__subtitle">Watch and listen</h6>
+            <h2 class="join__title">THE benefits of joining our church</h2>
+          </div>
+          <div class="join__row">
+            <div class="join__card">
+              <img class="join__img" src="images/home/join-1.png" alt="Join" />
+              <div class="join__card__info">
+                <h4 class="join__card__title">
+                  WATCH AND LISTEN TO OUR SERMONS
+                </h4>
+                <p class="join__card__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+              </div>
+            </div>
+            <div class="join__card">
+              <img class="join__img" src="images/home/join-2.png" alt="Join" />
+              <div class="join__card__info">
+                <h4 class="join__card__title">
+                  WATCH AND LISTEN TO OUR SERMONS
+                </h4>
+              </div>
+            </div>
+            <div class="join__card">
+              <img class="join__img" src="images/home/join-3.png" alt="Join" />
+              <div class="join__card__info">
+                <h4 class="join__card__title">
+                  WATCH AND LISTEN TO OUR SERMONS
+                </h4>
+              </div>
+            </div>
+            <div class="join__card">
+              <img class="join__img" src="images/home/join-4.png" alt="Join" />
+              <div class="join__card__info">
+                <h4 class="join__card__title">
+                  WATCH AND LISTEN TO OUR SERMONS
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming-sermons">
+        <div class="container upcoming-sermons__container">
+          <div class="us__header">
+            <h4 class="us__subtitle">Upcoming SERMONS</h4>
+            <h2 class="us__title">
+              join us and become part of something great
+            </h2>
+          </div>
+          <div class="us__row">
+            <div class="us__row__left">
+              <h5 class="us__row__subtitle">Upcoming Event</h5>
+              <h3 class="us__row__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="us__row__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <div class="us__row__details">
+                <img src="images/home/clock.svg" alt="" />
+                <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+              </div>
+              <div class="us__row__details">
+                <img src="images/home/clock.svg" alt="" />
+                <p>Friday 23:39 IST Saturday 11:20 ISD</p>
+              </div>
+              <button onclick='location.href="sermons.html"' class="up__btn">
+                Register
+              </button>
+            </div>
+            <div class="us__row__right">
+              <img src="images/home/us-1.png" alt="Upcoming sermons" />
+            </div>
+          </div>
+          <div class="us__bottom">
+            <a href="#" class="us__view__link"> View all Sermons </a>
+            <a href="">
+              <img src="images/home/arrow.svg" alt="Arrow Next" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="visit">
+        <div class="container-sm visit__container">
+          <div class="visit__box">
+            <div class="visit__box__left">
+              <h2 class="visit__title">We want to serve the world around us</h2>
+              <p class="visit__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+              </p>
+              <button class="visit__btn">Visit</button>
+            </div>
+            <div class="visit__box__right">
+              <img src="images/home/quote.svg" alt="quote" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container blog__container">
+          <div class="blog__header">
+            <h4 class="blog__subtitle">Read our Blog</h4>
+            <h2 class="blog__title">SHARE, INSPIRE, INNOVATE</h2>
+          </div>
+          <div class="blog__row">
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">Relationship</h4>
+              <h3 class="blog__card__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">By Mathew Johnson</p>
+                <p class="blog__card__name">Tuesday 13 May, 2021</p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">Relationship</h4>
+              <h3 class="blog__card__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">By Mathew Johnson</p>
+                <p class="blog__card__name">Tuesday 13 May, 2021</p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">Relationship</h4>
+              <h3 class="blog__card__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">By Mathew Johnson</p>
+                <p class="blog__card__name">Tuesday 13 May, 2021</p>
+              </div>
+            </div>
+            <div class="blog__card">
+              <h4 class="blog__card__subtitle">Relationship</h4>
+              <h3 class="blog__card__title">WATCH AND LISTEN TO OUR SERMONS</h3>
+              <p class="blog__card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <div class="blog__card__bottom">
+                <p class="blog__card__name">By Mathew Johnson</p>
+                <p class="blog__card__name">Tuesday 13 May, 2021</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="navbar__footer">
-          <div class="navbar__item">
-            <img
-              src="./images/footer images/footerlogo.svg"
-              alt="footer_logo"
-            />
+        <div class="footer__items">
+          <div class="footer_align-item">
+            <img src="../images/footer/footerlogo.svg" alt="flogo" />
+            <h5 class="footer__part">© Copyright Finsweet 2022</h5>
+            <ul class="footer__part-items">
+              <li class="footer__item">
+                <a href="#" class="footer__link"> (480) 555-0103 </a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">4517 Washington Ave. </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">finsweet@example.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_align-item">
+            <h2 class="footer__text">Quicklinks</h2>
+            <!-- <h5 class="footer__part">About us</h5> -->
+            <ul class="footer__part-items">
+              <li class="footer__item">
+                <a href="about-us.html" class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a href="sermons.html" class="footer__link"> Sermons</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="sermont-event.html" class="footer__link">Events</a>
+              </li>
+              <li class="footer__item">
+                <a href="blog.html" class="footer__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_align-item">
+            <h2 class="footer__text">Connect</h2>
+            <div class="footer__images">
+              <img src="../images/footer/facebook.svg" alt="facebook" />
+              <img src="../images/footer/twitter.svg" alt="twiter" />
+              <img src="../images/footer/linkidin.svg" alt="linkidin" />
+            </div>
+          </div>
+          <div class="footer_align-item">
+            <h4 class="subscribe">Subscribe to get Latest Updates and News</h4>
+            <div class="subscribe__btns">
+              <button type="button" class="email">Yourmail@gmail.com</button>
+              <button type="submit" class="footer-btn">Subscribe</button>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="JS/main.js"></script>
   </body>
 </html>
